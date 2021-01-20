@@ -1,4 +1,4 @@
-- name: Install docker
+- name: Ping
   hosts: ec2
   tasks:
     - name: ping
