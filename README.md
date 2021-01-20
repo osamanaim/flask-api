@@ -23,6 +23,15 @@ terraform apply
 
 ```
 
+- Ping ec2 instance with ansible
+```sh
+# ping to specific ip address
+ansible ec2 -m ping -i ../ansible/inventory.txt 
+
+# via playbook
+ansible-playbook ansible/playbook.yaml -i ansible/inventory.txt 
+```
+
 - Cleanup infra
 ```sh
 terraform destroy
