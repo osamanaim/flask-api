@@ -36,4 +36,7 @@
 
     - name: Start flask app
       docker_container:
-        name: 
+        name: flask-app
+        image: osamanaim/flask-app
+        detach: yes
+        published_ports: 5000:5000
