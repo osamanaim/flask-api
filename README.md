@@ -32,7 +32,12 @@ ansible ec2 -m ping -i ../ansible/inventory.txt
 ansible-playbook ansible/playbook.yaml -i ansible/inventory.txt 
 ```
 
+
+
 - Cleanup infra
 ```sh
 terraform destroy
 ```
+
+### Resources
+- [How to setup docker and start container via Ansible](https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-docker-on-ubuntu-18-04)
